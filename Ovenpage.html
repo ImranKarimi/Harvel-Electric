@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oven</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- rating star import link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Cascading StyleSheet/Footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Cascading StyleSheet/Sidebar&Button.css">
+
+</head>
+
+
+<body onload="Filter()">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="HomePage.html">Harvel Electric</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AirConditioner.html">Air Conditoner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Refrigerator.html">Refrigerator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="LCDsPage.html">LCDs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Ovenpage.html">Oven</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div style="background-color: #1a2333; width: 100% ;height: 5px;"></div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="sidebar">
+
+
+          <div id="CloseFilterBtn">
+            <i onclick="fadeOutAnim()" id="FadeOut_Btn" class="fa fa-close" style="font-size:36px"></i>
+
+          </div>
+          <form>
+
+
+            <div class="mt-3">
+              <label class="form-label">Companies</label><br>
+              <select id="companySelect" class="form-select" style="width: 140px;">
+                <option value="All" selected>All</option>
+                <option value="TCL">tcl</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Dawlance">Dawlance</option>
+                <option value="Haier">haier</option>
+                <option value="LG">LG</option>
+              </select>
+            </div>
+            <div class="mt-3 col-md-9 col-sm-12 ">
+              <label class="form-label">Categories</label><br>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="radio" checked id="LCDradio">
+                <label class="form-check-label" for="LCDradio">LCDs</label><br>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio" id="refrigeratorradio">
+                <label class=" form-check-label" for="refrigeratorradio">Refrigerator</label><br>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio" id="ACradio">
+                <label class="form-check-label" for="ACradio">Air Conditioner</label><br>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" checked name="radio" id="Ovenradio">
+                <label class="form-check-label" for="Ovenradio">Electric Oven</label><br>
+              </div>
+            </div>
+            <a download href="Word FIles/PriceList.docx"
+            class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3" >Download PriceList
+        </a><br>
+          </form>
+        </div>
+        <div id="Filterbtn">
+          <i onclick="fadeInAnim()" id="FadeIn_Btn" class="fa fa-filter" style="font-size:36px"></i>
+
+        </div>
+      </div>
+
+
+
+
+      <!-- Start of Refrigerator card -->
+      <div class="col-sm-12 col-md-12 col-lg-9 col-xl-10  mt-4 ml-3 g-0 ">
+
+        <!-- START OF Electric Oven CARDS -->
+        <div class="card Oven" id="Samsung_Oven">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="Samsung_ElectricOven_1.html">
+                <img src="Product_Images/Electric Oven/image-1.jpg" class="img-fluid rounded-start"
+                  alt="Samsung Electric Oven">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By Samsung</small>
+                <h5 class="card-title "> Samsung Bespoke Dual Cook Steam™ Series 7 76L steam oven NV7B7997ABK</h5>
+                <small>Color : Black</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">Energy Class: A+</li>
+                  <li>Capacity: 76L</li>
+                  <li>Steam 100%</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 599,999 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Samsung_ElectricOven_1.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="Samsung_ElectricOven_1.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Oven" id="Samsung_Oven">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="Samsung_ElectricOven_2.html">
+                <img src="Product_Images/Electric Oven/image-6.jpg" class="img-fluid rounded-start" alt="Samsung Oven">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By Samsung</small>
+                <h5 class="card-title ">Electric Oven with Simple Steam, Bespoke Design, 70L</h5>
+                <small>Color : Black</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">Natural Steam</li>
+                  <li>BESPOKE Color</li>
+                  <li>SmartThings Cooking</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 499,999 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Samsung_ElectricOven_2.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="Samsung_ElectricOven_2.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                    <a href=""></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Oven" id="Dawlence_Oven">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="Dawlance_ElectricOven_1.html">
+                <img src="Product_Images/Electric Oven/image-2.jpg" class="img-fluid rounded-start" alt="Dawlance Oven">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By Dawlance</small>
+                <h5 class="card-title "> DW 297 GSS Grilling Microwave Oven</h5>
+                <small>Color : Black</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">Microwave with Grill</li>
+                  <li>Power Efficient</li>
+
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 24,000 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Dawlance_ElectricOven_1.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="Dawlance_ElectricOven_1.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Oven" id="Dawlence_Oven">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="Dawlance_ElectricOven_2.html">
+                <img src="Product_Images/Electric Oven/image-5.jpg" class="img-fluid rounded-start" alt="Dawlance Oven">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By Dawlance</small>
+                <h5 class="card-title ">DW 128 G Grilling Microwave Oven</h5>
+                <small>Color : Black</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">Microwave with Grill</li>
+                  <li>Power Efficient</li>
+
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 35,500 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Dawlance_ElectricOven_2.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="Dawlance_ElectricOven_2.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Oven" id="LG_Oven">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="LG_ElectricOven_1.html">
+                <img src="Product_Images/Electric Oven/image-4.jpg" class="img-fluid rounded-start" alt="LG Oven">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By LG</small>
+                <h5 class="card-title ">0.9 cu. ft. NeoChef™ Countertop Microwave with Smart Inverter</h5>
+                <small>Color : Black</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">Total Capacity 1.0 cu. ft</li>
+                  <li>SmartDiagnosis™</li>
+                  <li>10-Years warranty</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 44,999 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="LG_ElectricOven_1.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="LG_ElectricOven_1.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Oven" id="LG_Oven">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="LG_ElectricOven_2.html">
+                <img src="Product_Images/Electric Oven/image-3.jpg" class="img-fluid rounded-start" alt="LG Oven">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By LG</small>
+                <h5 class="card-title "> 2.0 cu. ft. NeoChef™ Countertop Microwave with Smart Inverter and Sensor
+                  Cooking</h5>
+                <small>Color : Black</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">Total Capacity 2.0 cu. ft</li>
+                  <li>LG Smart Inverter</li>
+                  <li>10-years warranty</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 64,999 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="LG_ElectricOven_2.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="LG_ElectricOven_2.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- START OF LCD CARDS -->
+        <div class="card LCD" id="Haier_LCD">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="Haier_LCD_1.html">
+                <img src="Product_Images/LCDs/haier-1.jpg" class="img-fluid rounded-start" alt="Haier LCD">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By Haier</small>
+                <h5 class="card-title "> 50" Google TV</h5>
+                <small>Color : Silver</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">QLED Display</li>
+                  <li>Dolby Vision</li>
+                  <li>Hands Free Voice Control</li>
+                </ul>
+
+
+              </div>
+            </div>
+
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 139,900 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Haier_LCD_1.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3" id="buy_button">Buy
+                    Now</a><br>
+                  <a href="Haier_LCD_1.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card LCD" id="Haier_LCD">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="Haier_LCD_2.html">
+                <img src="Product_Images/LCDs/heier-2.jpg" class="img-fluid rounded-start" alt="LG LCD">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By Haier</small>
+                <h5 class="card-title "> 32" Google LED</h5>
+                <small>Color : Silver</small><br>
+
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">Google TV</li>
+                  <li>Bezel Less</li>
+                  <li>DBX-TV</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 55,000</h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Haier_LCD_2.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3" id="buy_button">Buy
+                    Now</a><br>
+                  <a href="Haier_LCD_2.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card LCD" id="TCL_LCD">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="TCL_LCD_1.html">
+                <img src="Product_Images/LCDs/TCL-1.jpg" class="img-fluid rounded-start" alt="TCL LCD">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By TCL</small>
+                <h5 class="card-title "> 43" iFFALCON U62 4K Smart TV</h5>
+                <small>Color : Black</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">4K HDR Display</li>
+                  <li>Dynamic Color Enhancement</li>
+                  <li>Micro Dimming</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 88,990 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="TCL_LCD_1.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3" id="buy_button">Buy
+                    Now</a><br>
+                  <a href="TCL_LCD_1.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card LCD" id="TCL_LCD">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="TCL_LCD_2.html">
+                <img src="Product_Images/LCDs/TCL-2.jpg" class="img-fluid rounded-start" alt="TCL LCD">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By TCL</small>
+                <h5 class="card-title "> 43" S53 iFFALCON LED Android TV</h5>
+                <small>Color : Silver</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">Chrome Cast Built-In</li>
+                  <li>Atmospheric Micro Dimming</li>
+                  <li>HDR10 Display</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 76,990 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="TCL_LCD_2.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3" id="buy_button">Buy
+                    Now</a><br>
+                  <a href="TCL_LCD_2.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card LCD" id="Samsung_LCD">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="Samsung_LCD_1.html">
+                <img src="Product_Images/LCDs/Image-1.jpg" class="img-fluid rounded-start" alt="Samsung LCD">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By Samsung</small>
+                <h5 class="card-title "> 85" Crystal UHD 4K CU8000</h5>
+                <small>Color : Titanium Gray</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+
+
+                  <li class="text-justify">Dynamic Crystal Color</li>
+                  <li>AirSlim</li>
+                  <li>Crystal Processor 4K</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨ 639,999</h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Samsung_LCD_1.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3" id="buy_button">Buy
+                    Now</a><br>
+                  <a href="Samsung_LCD_1.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card LCD" id="Samsung_LCD">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="Samsung_LCD_2.html">
+                <img src="Product_Images/LCDs/image-2.jpg" class="img-fluid rounded-start" alt="Samsung LCD ">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By Samsung</small>
+                <h5 class="card-title "> 75" Crystal UHD 4K CU7000</h5>
+                <small>Color : Black</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">PurColor</li>
+                  <li>Crystal Processor 4K</li>
+                  <li>Smart Hub</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 446,999 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Samsung_LCD_2.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3" id="buy_button">Buy
+                    Now</a><br>
+                  <a href="Samsung_LCD_2.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- Samsung Refrigerator Cards -->
+        <div class="card  Refrigerator" id="Samsung_Refrigerator" value="Samsung">
+          <div class="row g-0">
+            <div class="col-md-3 mt-0 ">
+              <a href="Samsung_Refrigerator_1.html">
+                <img src="Product_Images/Refrigerator/Samsung_1.jpg" class=" img-fluid" alt="Samsung Refrigerant.">
+              </a>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By Samsung</small>
+                <h5 class="card-title ">Side-by-Side Refrigerator, 641 Net Capacity</h5>
+                <small>Color : Silver</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+                  <li class="text-justify">More space & freshness</li>
+                  <li>SpaceMax™ Technology</li>
+                  <li>20-year warranty on the compressor</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 315,999 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Samsung_Refrigerator_1.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="Samsung_Refrigerator_1.html"><button id="learnMore_button"
+                      class="btn btn-light btn-sm h-10 w-100 mt-1"> Learn More </button></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card Refrigerator" id="Samsung_Refrigerator" value="Samsung">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="Samsung_Refrigerator_2.html">
+                <img src="Product_Images/Refrigerator/Samsung_2.jpg" class="img-fluid rounded-start" alt="...">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-1 mt-3">
+                <small>By Samsung</small>
+                <h5 class="card-title">Side-by-Side Refrigerator, 501L Net Capacity</h5>
+                <small>Color : Black</small><br>
+
+                <span class="fa fa-star " checked></span>
+                <span class="fa fa-star " checked></span>
+                <span class="fa fa-star " checked></span>
+                <span class="fa fa-star" checked></span>
+                <ul>
+                  <li>Ice & Water Dispenser (Plumbed)</li>
+                  <li>Digital Inverter Compressor</li>
+                  <li>20-year warranty on the compressor</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 315,999 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Samsung_Refrigerator_2.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="Samsung_Refrigerator_2.html"><button id="learnMore_button"
+                      class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dawlance Refrigerator Cards -->
+        <div class="card Refrigerator" id="Dawlence_Refrigerator">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="Dawlance_Refrigerator_1.html">
+                <img src="Product_Images/Refrigerator/image-3 (2).jpg" class="img-fluid rounded-start"
+                  alt="Dawlence_Refrigerator">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By Dawlance</small>
+                <h5 class="card-title ">9178LF Chrome Hairline Black Double Door</h5>
+                <small>Color : Black</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+                  <li class="text-justify">LVS Technology</li>
+                  <li>Hybrid Cooling</li>
+                  <li>Cooling Technology:
+                    Direct Cool</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 96,999 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Dawlance_Refrigerator_1.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="Dawlance_Refrigerator_1.html"><button id="learnMore_button"
+                      class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Refrigerator" id="Dawlence_Refrigerator">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="Dawlance_Refrigerator_2.html">
+                <img src="Product_Images/Refrigerator/image-4.jpg" class="img-fluid rounded-start"
+                  alt="Dawlence_Refrigerator">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By Dawlance</small>
+                <h5 class="card-title "> 9191WB Avante Noir Red Double Door </h5>
+                <small>Color : Avante Red</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+
+                <ul>
+                  <li class="text-justify">LVS Technology</li>
+                  <li>Energy Saving 35$</li>
+                  <li>R600A Green Refrigerant</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 109,999 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Dawlance_Refrigerator_2.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+
+                  <a href="Dawlance_Refrigerator_2.html"><button id="learnMore_button"
+                      class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- LG Regrigerator Cardss -->
+        <div class="card Refrigerator" id="LG_Refrigerator">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="LG_Refrigerator_1.html">
+                <img src="Product_Images/Refrigerator/image-5.jpg" class="img-fluid rounded-start"
+                  alt="LG Refrigerator">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By LG</small>
+                <h5 class="card-title "> Side-by-Side InstaView™ Black fridge, 617 Litre</h5>
+                <small>Color : black </small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+                  <li class="text-justify">InstaView Door-in-Door™: Knock Twice to See Inside</li>
+                  <li>LINEARCooling™: Minimum Temperature Fluctuations</li>
+                  <li>DoorCooling⁺™ for Even and Fast Cooling</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 415,999 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+
+                  <a href="LG_Refrigerator_1.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="LG_Refrigerator_1.html"><button id="learnMore_button"
+                      class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button></a>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card Refrigerator" id="LG_Refrigerator">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="LG_Refrigerator_2.html">
+                <img src="Product_Images/Refrigerator/image-6.jpg" class="img-fluid rounded-start"
+                  alt="LG Refrigerator">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By LG</small>
+                <h5 class="card-title "> Large Top Fridge, Smart Inverter, 592L</h5>
+                <small>Color : Silver</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">Smart Inverter Compressor for Energy Efficiency and Durability</li>
+                  <li>LINEARCooling™: Minimum Temperature Fluctuations</li>
+                  <li>Purified Internal Air with 5-Step Filtering Hygiene FRESH+™</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 359,999 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="LG_Refrigerator_2.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="LG_Refrigerator_2.html"><button id="learnMore_button"
+                      class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button></a>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- START OF AirConditioner CARDS -->
+        <div class="card AC" id="Samsung_AC">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="Samsung_AirConditrioner_1.html">
+                <img src="Product_Images/Air Conditioner/image-1.jpg" class="img-fluid rounded-start" alt="Samsung AC">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By Samsung</small>
+                <h5 class="card-title ">WindFree™ AR9500T Wall-mount AC with WindFree™</h5>
+                <small>Color : White</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">WindFree™ Cooling</li>
+                  <li>AI Auto Cooling</li>
+                  <li>Anti-bacterial Filter</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 170,000 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Samsung_AirConditrioner_1.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="Samsung_AirConditrioner_1.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card AC" id="Samsung_AC">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="Samsung_AirConditrioner_2.html">
+                <img src="Product_Images/Air Conditioner/image-2.jpg" class="img-fluid rounded-start" alt="Samsung AC">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By Samsung</small>
+                <h5 class="card-title ">AR9500T Wall-mount AC with Fast Cooling</h5>
+                <small>Color : White</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+                  <li class="text-justify">WindFree™ Cooling</li>
+                  <li>AI Auto Cooling</li>
+                  <li>Anti-bacterial Filter</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 150,000 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Samsung_AirConditrioner_2.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="Samsung_AirConditrioner_2.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card AC" id="Dawlance_AC">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="Dawlance_AirConditrioner_1.html">
+                <img src="Product_Images/Air Conditioner/image-3.jpg" class="img-fluid rounded-start" alt="Dawlance AC">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By Dawlance</small>
+                <h5 class="card-title ">Aura X 1 Ton Inverter Split AC</h5>
+                <small>Color : White</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">Inverter Mono Split</li>
+                  <li>Self Cleaning</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 150,000 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Dawlance_AirConditrioner_1.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="Dawlance_AirConditrioner_1.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card AC" id="Dawlance_AC">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="Dawlance_AirConditrioner_2.html">
+                <img src="Product_Images/Air Conditioner/image-4_1+2.jpg" class="img-fluid rounded-start" alt="...">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By Dawlance</small>
+                <h5 class="card-title ">Econo 2 Ton Inverter Split AC</h5>
+                <small>Color : White</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">Inverter Mono Split</li>
+                  <li>Self Cleaning</li>>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 244,999 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="Dawlance_AirConditrioner_2.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="Dawlance_AirConditrioner_2.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card AC" id="LG_AC">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="LG_AircConditioner_1.html">
+                <img src="Product_Images/Air Conditioner/image-5.jpg" class="img-fluid rounded-start" alt="...">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By LG</small>
+                <h5 class="card-title ">12,000 BTU Smart W-Fi Enabled Window Air Conditioner</h5>
+                <small>Color : White</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">Estimated Cooling Area 550 Sq. Ft</li>
+                  <li>Wi-Fi Enabled </li>
+                  <li>Slide Out Washable Filter & Filter Alert </li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 124,999</h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="LG_AircConditioner_1.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="LG_AircConditioner_1.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card AC" id="LG_AC">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <a href="LG_AircConditioner_2.html">
+                <img src="Product_Images/Air Conditioner/image-6.jpg" class="img-fluid rounded-start" alt="...">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-3 mt-3 ">
+                <small>By LG</small>
+                <h5 class="card-title ">23,500 BTU DUAL Inverter Smart wi-fi Enabled Window Air Conditioner</h5>
+                <small>Color : White</small><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <ul>
+
+                  <li class="text-justify">Estimated Cooling Area 1,450 Sq. Ft</li>
+                  <li>LG ThinQ® Technolog</li>
+                  <li>LoDecibel™ Quiet Operation</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 d-grid">
+              <div class="card-body p-3">
+                <div class="text-left">
+                  <h5 style="  font-weight:550; ;" class="card-title mt-3 ">₨. 189,999 </h5>
+                  <small>In Stock</small><br>
+                </div>
+
+                <div class="text-center">
+                  <a href="LG_AircConditioner_2.html" class="btn btn-primary btn-sm-4 mt-5 h-10 w-100 ml-3"
+                    id="buy_button">Buy Now</a><br>
+                  <a href="LG_AircConditioner_2.html">
+                    <button id="learnMore_button" class="btn btn-light btn-sm h-10 w-100 mt-1">Learn More</button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <button id="Loadbtn" onclick="LoadMoreButton()"> load more </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="Javascript/filter.js"></script>
+
+  <script>
+
+
+
+
+
+
+
+  </script>
+</body>
+<footer>
+
+  <div class="footerContainer">
+    <div class="socialIcons">
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+      <a href=""><i class="fa-brands fa-google-plus"></i></a>
+      <a href=""><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="footerNav">
+      <p> 123 City Street No</p>
+      <p> 123-456-4789</p>
+      <p>HarvelElectric@mail.com</p>
+    </div>
+
+  </div>
+  <div class="footerBottom">
+    <p>Copyright &copy;2024; <span>All Right Reserved</span></p>
+  </div>
+</footer>
+
+</html>

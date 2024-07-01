@@ -1,0 +1,114 @@
+.nav-link:hover{
+  color: #1a2735;
+  text-decoration:underline ;
+}
+.nav-link{
+transition: all 0.2s;
+}
+
+
+/* Start Of product cards */
+ul {
+
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  ul li {
+    font-size: 14px;
+    font-weight: light;
+
+  }
+
+  #learnMore_button {
+
+    border-radius: 15px;
+    padding-top: 1%;
+    border: solid 1px rgb(0, 0, 0);
+    background-color: white;
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #buy_button {
+
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    border: solid 1px rgb(0, 0, 0);
+    padding-top: 1%;
+  }
+
+  /* End Of product Cards */
+
+  /* Start Of Filter Menu On small screen devices */
+  .sidebar {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 200px;
+    height: 100vh;
+    animation-duration: 0.5s;
+    display: block;
+    position: sticky;
+    top: 0px;
+    transition: top 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: 150px) and (max-width: 991px) {
+    .sidebar {
+      display: none;
+    }
+
+    #FadeIn_Btn {
+      display: block;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .sidebar {
+      display: block;
+    }
+
+    #CloseFilterBtn {
+      display: none;
+    }
+
+    #FadeIn_Btn {
+      display: none;
+    }
+  }
+  body {
+    display: none; /* Hide the body content initially */
+}
+
+  /* End Of Filter Menu On small screen devices */
